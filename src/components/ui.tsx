@@ -1,6 +1,7 @@
-import { ArrowUpRight, Check, Copy, Ghost, LoaderCircle } from "lucide-react";
+import { ArrowUpRight, Check, Copy, LoaderCircle } from "lucide-react";
+import { GhostSymbol } from "./brand";
 import { useState } from "react";
-export function Mark() { return <span className="brand-mark"><Ghost size={25} strokeWidth={1.7} /></span>; }
+export function Mark() { return <span className="brand-mark"><GhostSymbol /></span>; }
 export function Spinner() { return <LoaderCircle size={16} className="spin" aria-hidden="true" />; }
 export function CopyButton({ text, label = "Copy address" }: { text: string; label?: string }) {
   const [copied, setCopied] = useState(false);

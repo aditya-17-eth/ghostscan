@@ -10,7 +10,7 @@ page.on("request", req => {
 try {
   await mkdir("test-results", { recursive: true });
   await page.route("https://ethereum-rpc.publicnode.com/**", route => route.fulfill({ status: 503, contentType: "text/plain", body: "Injected bootstrap outage for failure-path verification" }));
-  await page.goto(process.env.TEST_URL ?? "http://127.0.0.1:4173");
+  await page.goto(`${process.env.TEST_URL ?? "http://127.0.0.1:4173"}/terminal`);
   await page.getByTestId("status").filter({ hasText: "ANON-RPC UNAVAILABLE" }).waitFor();
   assert.match(await page.getByRole("status").innerText(), /HTTP 503/);
   assert.equal(hostRpc.filter(r => r.method !== "eth_chainId").length, 0);

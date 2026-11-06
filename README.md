@@ -26,7 +26,7 @@ npm start
 
 Open [localhost:4173](http://127.0.0.1:4173). `npm start` serves `out/` with a local static server. It does not proxy or log investigations. Stop either server with Ctrl+C.
 
-No automatic investigation runs on page load. Startup performs necessary direct bootstrap reads, then an anonymous chain-ID check and block read. Enter an address and press **Explore privately** to investigate.
+The homepage at `/` introduces the product without starting network connections. Enter the workspace at `/terminal`; section links support URL fragments such as `/terminal#privacy-lab`. No automatic address investigation runs on terminal load. Startup performs necessary direct bootstrap reads, then an anonymous chain-ID check and block read. Enter an address and press **Explore privately** to investigate.
 
 ## Implemented
 
@@ -158,3 +158,5 @@ This checkout has no Git remote configured and has not been published. Add your 
 Next: independent network instrumentation; ownership/update-policy verification of deployed specifiers; resilient operator-run gateways; worker lifecycle hardening upstream; optional token metadata via `eth_call`; accessible session export controls. ENS, arbitrary transaction history, pricing and security analysis are intentionally absent.
 
 MIT licensed. See [LICENSE](LICENSE).
+
+The decorative React Bits Faulty Terminal background is separately licensed under MIT + Commons Clause; see [its retained license and source notice](src/components/react-bits/README.md).

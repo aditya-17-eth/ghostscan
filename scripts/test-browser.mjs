@@ -22,7 +22,7 @@ const mark = text => { checks.push(text); console.log(`PASS ${text}`); };
 let progress;
 try {
   await mkdir("test-results", { recursive: true });
-  await page.goto(base);
+  await page.goto(`${base}/terminal`);
   await page.screenshot({ path: "test-results/overview-connecting.png", fullPage: true });
   assert.match(await page.getByTestId("status").innerText(), /ANON-RPC/);
   mark("Anon-RPC is the production default");
