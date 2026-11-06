@@ -1,0 +1,217 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-11-06T17:00:03.902Z",
+  "accounting": {
+    "total": 20,
+    "anon": 16,
+    "direct": 1,
+    "bootstrap": 3,
+    "failed": 0,
+    "coverage": 80,
+    "latency": 3926.85
+  },
+  "clearedDetailRows": 0,
+  "note": "Application dispatch measurements only; no independently verified network hops or anonymity guarantee. Session totals include cleared detail rows. Page reload starts a new session.",
+  "events": [
+    {
+      "id": 1,
+      "at": "2026-11-06T16:58:55.594Z",
+      "method": "eth_chainId",
+      "transport": "bootstrap",
+      "network": "Ethereum mainnet",
+      "status": "success",
+      "duration": 540,
+      "sent": true
+    },
+    {
+      "id": 2,
+      "at": "2026-11-06T16:58:56.146Z",
+      "method": "eth_call",
+      "transport": "bootstrap",
+      "network": "Ethereum mainnet",
+      "status": "success",
+      "duration": 529,
+      "sent": true
+    },
+    {
+      "id": 3,
+      "at": "2026-11-06T16:58:56.682Z",
+      "method": "eth_call",
+      "transport": "bootstrap",
+      "network": "Ethereum mainnet",
+      "status": "success",
+      "duration": 523,
+      "sent": true
+    },
+    {
+      "id": 4,
+      "at": "2026-11-06T16:59:15.286Z",
+      "method": "eth_chainId",
+      "transport": "anon",
+      "network": "Nym",
+      "status": "success",
+      "duration": 10150,
+      "sent": true
+    },
+    {
+      "id": 5,
+      "at": "2026-11-06T16:59:25.441Z",
+      "method": "eth_blockNumber",
+      "transport": "anon",
+      "network": "Nym",
+      "status": "success",
+      "duration": 1048,
+      "sent": true
+    },
+    {
+      "id": 6,
+      "at": "2026-11-06T16:59:25.768Z",
+      "method": "eth_blockNumber",
+      "transport": "anon",
+      "network": "Nym",
+      "status": "success",
+      "duration": 10601,
+      "sent": true
+    },
+    {
+      "id": 7,
+      "at": "2026-11-06T16:59:36.372Z",
+      "method": "eth_getBalance",
+      "transport": "anon",
+      "network": "Nym",
+      "status": "success",
+      "duration": 1596,
+      "sent": true
+    },
+    {
+      "id": 8,
+      "at": "2026-11-06T16:59:36.372Z",
+      "method": "eth_getTransactionCount",
+      "transport": "anon",
+      "network": "Nym",
+      "status": "success",
+      "duration": 5211,
+      "sent": true
+    },
+    {
+      "id": 9,
+      "at": "2026-11-06T16:59:36.372Z",
+      "method": "eth_getCode",
+      "transport": "anon",
+      "network": "Nym",
+      "status": "success",
+      "duration": 4470,
+      "sent": true
+    },
+    {
+      "id": 10,
+      "at": "2026-11-06T16:59:42.081Z",
+      "method": "eth_blockNumber",
+      "transport": "anon",
+      "network": "Nym",
+      "status": "success",
+      "duration": 749,
+      "sent": true
+    },
+    {
+      "id": 11,
+      "at": "2026-11-06T16:59:42.835Z",
+      "method": "eth_getBalance",
+      "transport": "anon",
+      "network": "Nym",
+      "status": "success",
+      "duration": 1067,
+      "sent": true
+    },
+    {
+      "id": 12,
+      "at": "2026-11-06T16:59:42.835Z",
+      "method": "eth_getTransactionCount",
+      "transport": "anon",
+      "network": "Nym",
+      "status": "success",
+      "duration": 3702,
+      "sent": true
+    },
+    {
+      "id": 13,
+      "at": "2026-11-06T16:59:42.836Z",
+      "method": "eth_getCode",
+      "transport": "anon",
+      "network": "Nym",
+      "status": "success",
+      "duration": 3130,
+      "sent": true
+    },
+    {
+      "id": 14,
+      "at": "2026-11-06T16:59:47.032Z",
+      "method": "eth_blockNumber",
+      "transport": "anon",
+      "network": "Nym",
+      "status": "success",
+      "duration": 1198,
+      "sent": true
+    },
+    {
+      "id": 15,
+      "at": "2026-11-06T16:59:48.233Z",
+      "method": "eth_getBalance",
+      "transport": "anon",
+      "network": "Nym",
+      "status": "success",
+      "duration": 7628,
+      "sent": true
+    },
+    {
+      "id": 16,
+      "at": "2026-11-06T16:59:48.233Z",
+      "method": "eth_getTransactionCount",
+      "transport": "anon",
+      "network": "Nym",
+      "status": "success",
+      "duration": 12430,
+      "sent": true
+    },
+    {
+      "id": 17,
+      "at": "2026-11-06T16:59:48.233Z",
+      "method": "eth_getCode",
+      "transport": "anon",
+      "network": "Nym",
+      "status": "success",
+      "duration": 11400,
+      "sent": true
+    },
+    {
+      "id": 18,
+      "at": "2026-11-06T17:00:01.231Z",
+      "method": "eth_blockNumber",
+      "transport": "anon",
+      "network": "Nym",
+      "status": "success",
+      "duration": 1175,
+      "sent": true
+    },
+    {
+      "id": 19,
+      "at": "2026-11-06T17:00:02.408Z",
+      "method": "eth_getBalance",
+      "transport": "anon",
+      "network": "Nym",
+      "status": "success",
+      "duration": 1123,
+      "sent": true
+    },
+    {
+      "id": 20,
+      "at": "2026-11-06T17:00:02.409Z",
+      "method": "eth_getBalance",
+      "transport": "direct",
+      "network": "Ethereum mainnet",
+      "status": "success",
+      "duration": 267,
+      "sent": true
+    }
+  ]
+}

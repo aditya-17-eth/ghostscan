@@ -1,0 +1,155 @@
+{
+  "testedAt": "2026-11-06T16:31:53.954Z",
+  "result": {
+    "network": "nym",
+    "specifier": "0x3aCD9742C68F6d993066Ae25533e09b9e1f60eD0",
+    "block": "0x1922d1f",
+    "balance": "0x4d05f3d11457698c62cf16"
+  },
+  "diagnostics": {
+    "mode": "anon",
+    "network": "nym",
+    "status": "ready",
+    "error": "",
+    "events": [
+      {
+        "id": 1,
+        "at": "2026-11-06T16:31:23.322Z",
+        "method": "eth_chainId",
+        "params": [],
+        "transport": "bootstrap",
+        "network": "Ethereum mainnet",
+        "status": "success",
+        "duration": 406,
+        "sent": true,
+        "result": "0x1"
+      },
+      {
+        "id": 2,
+        "at": "2026-11-06T16:31:23.757Z",
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "[hex redacted]",
+            "data": "0x3898587d"
+          },
+          "latest"
+        ],
+        "transport": "bootstrap",
+        "network": "Ethereum mainnet",
+        "status": "success",
+        "duration": 534,
+        "sent": true,
+        "result": "[hex redacted]"
+      },
+      {
+        "id": 3,
+        "at": "2026-11-06T16:31:24.295Z",
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "[hex redacted]",
+            "data": "0x1c67ff29"
+          },
+          "latest"
+        ],
+        "transport": "bootstrap",
+        "network": "Ethereum mainnet",
+        "status": "success",
+        "duration": 516,
+        "sent": true,
+        "result": "[hex redacted]"
+      },
+      {
+        "id": 4,
+        "at": "2026-11-06T16:31:43.389Z",
+        "method": "eth_chainId",
+        "params": [],
+        "transport": "anon",
+        "network": "Nym",
+        "status": "success",
+        "duration": 9102,
+        "sent": true,
+        "result": "0x1"
+      },
+      {
+        "id": 5,
+        "at": "2026-11-06T16:31:52.495Z",
+        "method": "eth_blockNumber",
+        "params": [],
+        "transport": "anon",
+        "network": "Nym",
+        "status": "success",
+        "duration": 694,
+        "sent": true,
+        "result": "0x1922d1f"
+      },
+      {
+        "id": 6,
+        "at": "2026-11-06T16:31:53.192Z",
+        "method": "eth_getBalance",
+        "params": [
+          "[hex redacted]",
+          "0x1922d1f"
+        ],
+        "transport": "anon",
+        "network": "Nym",
+        "status": "success",
+        "duration": 736,
+        "sent": true,
+        "result": "0x4d05f3d11457698c62cf16"
+      }
+    ],
+    "logs": [
+      {
+        "at": "2026-11-06T16:31:43.395Z",
+        "level": "info",
+        "message": "nym tunnel ready"
+      },
+      {
+        "at": "2026-11-06T16:31:52.493Z",
+        "level": "info",
+        "message": "Nym worker ready. Hash verified by the official harness; mainnet chain ID returned through worker.fetch. Network hops are not independently observed."
+      }
+    ],
+    "bootMs": 29171,
+    "workerHash": "0xf13a448a8721b9d0b20da3d5b80ffe00bf4c5bb3aae812a38d3d1e3bc81fceb8",
+    "block": "0x1922d1f"
+  },
+  "observedHostRpc": [
+    {
+      "url": "https://ethereum-rpc.publicnode.com/",
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "url": "https://ethereum-rpc.publicnode.com/",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3aCD9742C68F6d993066Ae25533e09b9e1f60eD0",
+          "data": "0x3898587d"
+        },
+        "latest"
+      ]
+    },
+    {
+      "url": "https://ethereum-rpc.publicnode.com/",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3aCD9742C68F6d993066Ae25533e09b9e1f60eD0",
+          "data": "0x1c67ff29"
+        },
+        "latest"
+      ]
+    }
+  ],
+  "directInvestigationRequests": [],
+  "browserErrors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "[nym-anon-rpc idb-shim] IndexedDB is denied in this context; using in-memory storage (client identity is ephemeral per boot)",
+    "using deprecated parameters for the initialization function; pass a single object instead"
+  ],
+  "conclusion": "Real worker requests returned; no host direct investigation RPC observed. Does not independently verify network anonymity."
+}

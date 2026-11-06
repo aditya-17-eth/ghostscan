@@ -1,0 +1,229 @@
+{
+  "testedAt": "2026-11-06T16:32:41.306Z",
+  "result": {
+    "error": "Error: Anonymity network startup timed out. Reconnect or try the other documented network."
+  },
+  "diagnostics": {
+    "mode": "anon",
+    "network": "tor",
+    "status": "error",
+    "error": "Anonymity network startup timed out. Reconnect or try the other documented network.",
+    "events": [
+      {
+        "id": 1,
+        "at": "2026-11-06T16:29:40.666Z",
+        "method": "eth_chainId",
+        "params": [],
+        "transport": "bootstrap",
+        "network": "Ethereum mainnet",
+        "status": "success",
+        "duration": 582,
+        "sent": true,
+        "result": "0x1"
+      },
+      {
+        "id": 2,
+        "at": "2026-11-06T16:29:41.274Z",
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "[hex redacted]",
+            "data": "0x3898587d"
+          },
+          "latest"
+        ],
+        "transport": "bootstrap",
+        "network": "Ethereum mainnet",
+        "status": "success",
+        "duration": 517,
+        "sent": true,
+        "result": "[hex redacted]"
+      },
+      {
+        "id": 3,
+        "at": "2026-11-06T16:29:41.795Z",
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "[hex redacted]",
+            "data": "0x1c67ff29"
+          },
+          "latest"
+        ],
+        "transport": "bootstrap",
+        "network": "Ethereum mainnet",
+        "status": "success",
+        "duration": 535,
+        "sent": true,
+        "result": "[hex redacted]"
+      }
+    ],
+    "logs": [
+      {
+        "at": "2026-11-06T16:29:43.657Z",
+        "level": "info",
+        "message": "[00.001] tor-js worker: using 1 gateway(s), log level info"
+      },
+      {
+        "at": "2026-11-06T16:29:43.756Z",
+        "level": "info",
+        "message": "[00.101] Waiting for client"
+      },
+      {
+        "at": "2026-11-06T16:29:43.806Z",
+        "level": "info",
+        "message": "[00.151] Bootstrapping..."
+      },
+      {
+        "at": "2026-11-06T16:29:43.819Z",
+        "level": "info",
+        "message": "[00.163] [tor_js] Creating TorClient"
+      },
+      {
+        "at": "2026-11-06T16:29:43.833Z",
+        "level": "warn",
+        "message": "[00.176] [tor_memquota::config] Unable to get the total available memory. Using a constant max instead: total available memory is unavailable"
+      },
+      {
+        "at": "2026-11-06T16:29:43.841Z",
+        "level": "warn",
+        "message": "[00.183] [tor_memquota::config] Unable to get the total available memory. Using a constant max instead: total available memory is unavailable"
+      },
+      {
+        "at": "2026-11-06T16:29:43.845Z",
+        "level": "info",
+        "message": "[00.189] [tor_js] Initializing JS storage..."
+      },
+      {
+        "at": "2026-11-06T16:29:43.869Z",
+        "level": "info",
+        "message": "[00.214] [tor_js::fast_bootstrap] Fast bootstrap: fetching bootstrap.zip..."
+      },
+      {
+        "at": "2026-11-06T16:29:43.871Z",
+        "level": "info",
+        "message": "[00.214] Fast bootstrap: fetching bootstrap.zip.zst..."
+      },
+      {
+        "at": "2026-11-06T16:29:58.900Z",
+        "level": "warn",
+        "message": "[15.245] [tor_js] Fast bootstrap failed (continuing normally): JsValue(Error: all gateways failed for /bootstrap.zip.zst: 152.236.3.22:12298:uEiCH0VdbhryzJcMtCfB0vLA4sOvHdQ4hq5w7CopcwU59bQ: dial 152.236.3.22:12298:uEiCH0VdbhryzJcMtCfB0vLA4sOvHdQ4hq5w7CopcwU59bQ: timed out\nError: all gateways failed for /bootstrap.zip.zst: 152.236.3.22:12298:uEiCH0VdbhryzJcMtCfB0vLA4sOvHdQ4hq5w7CopcwU59bQ: dial 152.236.3.22:12298:uEiCH0VdbhryzJcMtCfB0vLA4sOvHdQ4hq5w7CopcwU59bQ: timed out\n    at ArtiSocketProvider.gatewayFetch (blob:null/cfdb2a0e-bb92-4fcd-8e6f-7ebd5f453a4a:2384:13)\n    at async blob:null/cfdb2a0e-bb92-4fcd-8e6f-7ebd5f453a4a:2443:23)"
+      },
+      {
+        "at": "2026-11-06T16:29:58.901Z",
+        "level": "info",
+        "message": "[15.245] [tor_js] Storage configured (state + directory cache)"
+      },
+      {
+        "at": "2026-11-06T16:29:58.906Z",
+        "level": "info",
+        "message": "[15.250] [tor_memquota::mtracker] Memory quota tracking initialised, max = 1.00 GiB, low_water = 768 MiB"
+      },
+      {
+        "at": "2026-11-06T16:29:58.908Z",
+        "level": "info",
+        "message": "[15.251] [arti_client::client] Running without a keystore (WASM)"
+      },
+      {
+        "at": "2026-11-06T16:29:58.909Z",
+        "level": "info",
+        "message": "[15.251] [tor_js] TorClient created (unbootstrapped)"
+      },
+      {
+        "at": "2026-11-06T16:29:58.910Z",
+        "level": "info",
+        "message": "[15.251] [tor_js] Bootstrapping Tor client..."
+      },
+      {
+        "at": "2026-11-06T16:29:58.934Z",
+        "level": "info",
+        "message": "[15.280] [tor_dirmgr] Didn't get usable directory from cache."
+      },
+      {
+        "at": "2026-11-06T16:29:58.973Z",
+        "level": "info",
+        "message": "[15.318] [tor_dirmgr::bootstrap] 1: Looking for a consensus., attempt = 1"
+      },
+      {
+        "at": "2026-11-06T16:30:58.984Z",
+        "level": "warn",
+        "message": "[01:15.329] [tor_circmgr::mgr] All tunnel attempts failed due to timeout"
+      },
+      {
+        "at": "2026-11-06T16:30:58.989Z",
+        "level": "warn",
+        "message": "[01:15.330] [tor_circmgr::mgr] Request failed"
+      },
+      {
+        "at": "2026-11-06T16:30:58.991Z",
+        "level": "warn",
+        "message": "[01:15.331] [tor_dirmgr::bootstrap] error while downloading, error = Problem downloading directory object"
+      },
+      {
+        "at": "2026-11-06T16:31:00.000Z",
+        "level": "info",
+        "message": "[01:16.339] [tor_dirmgr::bootstrap] 2: Looking for a consensus., attempt = 1"
+      },
+      {
+        "at": "2026-11-06T16:31:42.869Z",
+        "level": "warn",
+        "message": "[01:59.214] [tor_circmgr::mgr] Reached circuit build retry limit, exiting..."
+      },
+      {
+        "at": "2026-11-06T16:31:42.870Z",
+        "level": "warn",
+        "message": "[01:59.214] [tor_circmgr::mgr] Request failed"
+      },
+      {
+        "at": "2026-11-06T16:31:42.872Z",
+        "level": "warn",
+        "message": "[01:59.214] [tor_dirmgr::bootstrap] error while downloading, error = Problem downloading directory object"
+      },
+      {
+        "at": "2026-11-06T16:31:45.468Z",
+        "level": "info",
+        "message": "[02:01.810] [tor_dirmgr::bootstrap] 3: Looking for a consensus., attempt = 1"
+      },
+      {
+        "at": "2026-11-06T16:32:41.277Z",
+        "level": "error",
+        "message": "Anonymity network startup timed out. Reconnect or try the other documented network."
+      }
+    ],
+    "workerHash": "0x5b62f358ce7a2b94ee9bc3a0e6a08757db68fa08fc348276f31eda788aec818b"
+  },
+  "observedHostRpc": [
+    {
+      "url": "https://ethereum-rpc.publicnode.com/",
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "url": "https://ethereum-rpc.publicnode.com/",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x700dA3193D35fA54Cd3fBf29B66f2a2A0385659e",
+          "data": "0x3898587d"
+        },
+        "latest"
+      ]
+    },
+    {
+      "url": "https://ethereum-rpc.publicnode.com/",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x700dA3193D35fA54Cd3fBf29B66f2a2A0385659e",
+          "data": "0x1c67ff29"
+        },
+        "latest"
+      ]
+    }
+  ],
+  "directInvestigationRequests": [],
+  "browserErrors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "conclusion": "Integration not verified; see actual error."
+}

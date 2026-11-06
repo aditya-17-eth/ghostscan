@@ -1,0 +1,37 @@
+{
+  "testedAt": "2026-11-06T16:51:39.141Z",
+  "injectedFailure": "Bootstrap HTTP 503 (fault injection only; not evidence of network success)",
+  "visibleError": true,
+  "recovery": "Real Nym reconnect and real Ethereum address investigation succeeded",
+  "noDirectInvestigationFallbackObserved": true,
+  "hostRpc": [
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3aCD9742C68F6d993066Ae25533e09b9e1f60eD0",
+          "data": "0x3898587d"
+        },
+        "latest"
+      ]
+    },
+    {
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3aCD9742C68F6d993066Ae25533e09b9e1f60eD0",
+          "data": "0x1c67ff29"
+        },
+        "latest"
+      ]
+    }
+  ]
+}

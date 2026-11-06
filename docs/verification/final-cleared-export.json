@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-11-06T17:00:04.317Z",
+  "accounting": {
+    "total": 20,
+    "anon": 16,
+    "direct": 1,
+    "bootstrap": 3,
+    "failed": 0,
+    "coverage": 80,
+    "latency": 3926.85
+  },
+  "clearedDetailRows": 20,
+  "note": "Application dispatch measurements only; no independently verified network hops or anonymity guarantee. Session totals include cleared detail rows. Page reload starts a new session.",
+  "events": []
+}

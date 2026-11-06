@@ -1,0 +1,126 @@
+{
+  "testedAt": "2026-11-06T17:00:40.593Z",
+  "checks": [
+    "Anon-RPC is the production default",
+    "Real Nym worker connects in production export",
+    "Invalid addresses are rejected before RPC dispatch",
+    "Real balance, nonce, code and shared-block contract classification use worker; no host direct investigation RPC",
+    "Contract inspector reads real WETH bytecode and hash",
+    "Real no-code address classification does not infer ownership",
+    "Explicit comparison returns equal real balances at the same block; one direct request; session stays anonymous mode",
+    "Observatory counts bootstrap and direct comparison; diagnostic export omits investigation contents",
+    "Transport and method filters and sanitized request inspection work",
+    "Clearing details preserves complete session totals and bootstrap coverage in UI/export",
+    "Direct mode requires confirmation and is visibly labeled; explicit direct explorer works",
+    "Reconnect closes direct mode and restores actual Nym readiness",
+    "390px mobile layout has no horizontal overflow and navigation works"
+  ],
+  "comparisonResponses": [
+    "93115866.009313470399106838 ETH",
+    "93115866.009313470399106838 ETH"
+  ],
+  "diagnosticAccounting": {
+    "total": 20,
+    "anon": 16,
+    "direct": 1,
+    "bootstrap": 3,
+    "failed": 0,
+    "coverage": 80,
+    "latency": 3926.85
+  },
+  "observedHostRpc": [
+    {
+      "destination": "ethereum-rpc.publicnode.com",
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "destination": "ethereum-rpc.publicnode.com",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3aCD9742C68F6d993066Ae25533e09b9e1f60eD0",
+          "data": "0x3898587d"
+        },
+        "latest"
+      ]
+    },
+    {
+      "destination": "ethereum-rpc.publicnode.com",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3aCD9742C68F6d993066Ae25533e09b9e1f60eD0",
+          "data": "0x1c67ff29"
+        },
+        "latest"
+      ]
+    },
+    {
+      "destination": "ethereum-rpc.publicnode.com",
+      "method": "eth_getBalance",
+      "params": [
+        "0x00000000219ab540356cBB839Cbe05303d7705Fa",
+        "0x1922dac"
+      ]
+    },
+    {
+      "destination": "ethereum-rpc.publicnode.com",
+      "method": "eth_blockNumber",
+      "params": []
+    },
+    {
+      "destination": "ethereum-rpc.publicnode.com",
+      "method": "eth_getBalance",
+      "params": [
+        "0x000000000000000000000000000000000000dEaD",
+        "0x1922dac"
+      ]
+    },
+    {
+      "destination": "ethereum-rpc.publicnode.com",
+      "method": "eth_getTransactionCount",
+      "params": [
+        "0x000000000000000000000000000000000000dEaD",
+        "0x1922dac"
+      ]
+    },
+    {
+      "destination": "ethereum-rpc.publicnode.com",
+      "method": "eth_getCode",
+      "params": [
+        "0x000000000000000000000000000000000000dEaD",
+        "0x1922dac"
+      ]
+    },
+    {
+      "destination": "ethereum-rpc.publicnode.com",
+      "method": "eth_chainId",
+      "params": []
+    },
+    {
+      "destination": "ethereum-rpc.publicnode.com",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3aCD9742C68F6d993066Ae25533e09b9e1f60eD0",
+          "data": "0x3898587d"
+        },
+        "latest"
+      ]
+    },
+    {
+      "destination": "ethereum-rpc.publicnode.com",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3aCD9742C68F6d993066Ae25533e09b9e1f60eD0",
+          "data": "0x1c67ff29"
+        },
+        "latest"
+      ]
+    }
+  ],
+  "pageErrors": [],
+  "scope": "Real production browser flow. Host request observation and application dispatch do not independently verify network-layer anonymity."
+}
