@@ -39,9 +39,22 @@ The homepage at `/` introduces the product without starting network connections.
 - Explicit direct-mode confirmation; visible transport errors; reconnect; stale-response rejection.
 - Responsive terminal UI and in-app documentation. External explorer links disclose the address to that service when clicked.
 
-![GHOSTSCAN real address investigation](docs/screenshots/explorer-desktop.png)
+### Current frontend
 
-More screenshots: [Privacy Lab](docs/screenshots/privacy-lab.png), [mobile](docs/screenshots/explorer-mobile.png).
+The red–green–black identity with the interactive Faulty Terminal hero background.
+
+![GHOSTSCAN homepage with the current signal sculpture and terminal background](docs/screenshots/landing-desktop.png)
+
+The investigation workspace retains explicit transport status and real session accounting.
+
+![GHOSTSCAN current Ethereum investigation terminal](docs/screenshots/terminal-desktop.png)
+
+<details>
+<summary>Mobile homepage</summary>
+
+<img src="docs/screenshots/landing-mobile.png" alt="GHOSTSCAN current mobile homepage" width="390" />
+
+</details>
 
 ## Verified integration
 
