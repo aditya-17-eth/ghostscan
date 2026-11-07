@@ -161,10 +161,8 @@ Settings accepts HTTPS bootstrap/destination RPC URLs for the current page sessi
 
 This checkout has no Git remote configured and has not been published. Add your repository remote before sharing or deploying the submission.
 
-## Submission materials and next steps
+## Documentation and next steps
 
-- [Under-three-minute demo script](docs/demo-script.md)
-- [Submission description](docs/submission.md)
 - [Integration research](docs/research.md)
 - [Threat model and known limitations](docs/threat-model.md)
 
